@@ -2,14 +2,14 @@ package test.reflection;
 
 import java.lang.reflect.Method;
 
+
 public class ReflectApp {
 
 	public static void main(String[] args) {
 		 
 		/**
-		 * Paramaters
-		 *  */
-		//no paramater
+		 * Parameters
+		 */
 		Class noparams[] = {};
 	 
 		//String parameter
@@ -22,7 +22,7 @@ public class ReflectApp {
 		
 		
 		try{
-		        //load the AppTest at runtime
+		    //load the AppTest at runtime
 			Class cls = Class.forName("test.reflection.AppTest");
 			Object obj = cls.newInstance();
 	 
@@ -49,6 +49,6 @@ public class ReflectApp {
 		}catch(Exception ex){
 			ex.printStackTrace();
 		}
-	   }
+	}
 	
 }
